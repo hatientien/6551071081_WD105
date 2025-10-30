@@ -49,17 +49,64 @@
   left: 800px;
   top: 50px;
 }
-.khung {
-  border: 1px solid black;
-  margin: 10px;
-  width: 300px;
-  height: 20x;
+/* table,th,td{
+width: 100%;
+border: 2px solid black;
 }
-.select {
-  width: 300px;
-  height: 30px;
+#chinh{
+    margin-top: 10px;
+    margin-left: 40px;
+    border-radius: 15px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+input[type="text"]{
+    width: 100%;
+}
+input[type="textarea"]{
+    width: 100%;
+}
+select{
+    width: 100%;
+} */
+#name,
+#email {
+  padding-left: 25px;
+  border: 1px solid black;
+  width: 90%;
+  height: 35px;
+}
+
+#subject {
+  width: 90%;
+  height: 35px;
+  padding-left: 25px;
+}
+
+.data {
+  border: 1px solid black;
+  width: 90%;
+  height: 100px;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+
+h1 {
   text-align: center;
+  padding-bottom: 25px;
+}
+
+.oke {
+  width: 90%;
+  height: 45px;
   background-color: black;
-  border-radius: 50px;
   color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.oke:active {
+  transform: scale(0.95);
 }
