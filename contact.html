@@ -343,30 +343,46 @@
 		<div class="container">
 			<div class="flex-w flex-tr">
 				<div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
-					<h2 style="color:brown">Làm câu 4 tại đây</h2>
-					<div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md messager1">
-						<h3 class="h3"><b>Send Us A Message</b></h3>
-						<input type="text" placeholder="    YourName" required class="khung">
-						<input type="text" placeholder="    Your Email Address" required class="khung">
-						Message Type:
-						<input type="checkbox" name="" id="" required>
-						Feedback
-						<input type="checkbox" name="" id="" required>
-						Support
-						<input type="checkbox" name="" id="" required>
-						Other
+					<form action="send" class="send">
 
-						<select id="mySelect">
-							<option class="khung"> -- Select Subjects -- </option>
-							<option></option>
-							<option></option>
-							<option></option>
+						<h1>Send Us A Message</h1>
+
+						<label for="name">
+							<input type="text" placeholder="Your Name" id="name">
+						</label>
+						<label for="email">
+							<input type="email" placeholder=" Your Email Address" id="email">
+						</label>
+
+						<label for="type">Message type:
+							<label>
+								<input type="radio" id="type" name="type" value="Feedback">Feedback
+							</label>
+
+							<label>
+								<input type="radio" id="type" name="type" value="Support">Support
+							</label>
+
+							<label>
+								<input type="radio" id="type" name="type" value="Other">Other
+							</label>
+
+						</label>
+
+						<select name="subject" id="subject">
+							<option value="--Select Subject--" selected>--Select Subject--</option>
+							<option value="Select  2">Select 2</option>
+							<option value="Select  3">Select 3</option>
+							<option value="Select 4">Select 4</option>
 						</select>
+						<br>
+						<br>
 
-						<textarea name="" class="khung" placeholder="How can we help?"></textarea>
-
-						<button type="submit" class="select" ;">Submit</button>
-					</div>
+						<textarea class="data" placeholder="How Can We Help ?"></textarea>
+					</form>
+					<br>
+					<br>
+					<button class="oke">Submit</button>
 				</div>
 
 				<div class="size-210 bor10 flex-w flex-col-m p-lr-93 p-tb-30 p-lr-15-lg w-full-md">
